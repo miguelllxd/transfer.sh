@@ -28,7 +28,7 @@ RUN mkdir -p /tmp/useradd /tmp/empty && \
     echo "${RUNAS}:!::" >> /tmp/useradd/groupshadow; else touch /tmp/useradd/unused; fi
 
 FROM scratch AS final
-LABEL maintainer="Andrea Spacca <andrea.spacca@gmail.com>"
+LABEL maintainer="Allice Re <allicexddd@gmail.com>"
 ARG RUNAS
 
 COPY --from=build /etc/mime.types /etc/mime.types
